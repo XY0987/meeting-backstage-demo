@@ -1,9 +1,9 @@
 var redis = require("redis");
 
 var redisClient = redis.createClient({
-  host: "",// ip
+  host: "localhost",// ip
   port: 6379,// 端口号
-  password: '',// 密码
+  // password: '',// 密码
 });
 
 redisClient.on("connect", function () {
